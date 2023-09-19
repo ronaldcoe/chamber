@@ -3,7 +3,7 @@ let date = new Date;
 
 if(date.getDay() == 1 || date.getDay() == 2) {
     document.querySelector('#notification').style.padding = "10px";
-    document.querySelector("#notification").innerHTML = '<i class="fa-solid fa-handshake" style="color:white">  </i> <a href="/">Join the Guayaquil Chamber today!</a>';
+    document.querySelector("#notification").innerHTML = '<i class="fa-solid fa-handshake" style="color:#1659a4">  </i> <a href="/">Join the Guayaquil Chamber today!</a>';
 }
 
 

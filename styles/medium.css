@@ -54,13 +54,11 @@
   
 
   #notification {
-    background-color: var(--blue);
+    background-color: white;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: var(--blue);
   }
-  #notification a {
-    color: white;
-  }
+ 
 
   header {
     display: flex;
