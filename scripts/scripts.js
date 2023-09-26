@@ -8,7 +8,7 @@ if(date.getDay() == 1 || date.getDay() == 2) {
 
 
 
-document.querySelector(".lastUpdated").textContent = "Last updated: " + document.lastModified 
+document.querySelector(".lastUpdated").innerHTML = `<span>&copy ${date.getFullYear()} Guayaquil Chamber of Commerce</span> <span class="footer_bars">|</span> <span>Ronald Coello</span> <span class="footer_bars">|</span><span> WDD 230 Project Example</span><span class="footer_bars">|</span><span>Last updated: ${document.lastModified}</span>`
 
 
 

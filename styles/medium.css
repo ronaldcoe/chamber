@@ -31,12 +31,7 @@
   
   
 
-  #notification {
-    background-color: white;
-    text-align: center;
-    color: var(--blue);
-  }
- 
+
 
   header {
     display: flex;
@@ -177,12 +172,16 @@
   #s3 {
     padding: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     height: 100%;
-    align-items: flex-start;
-  }
+    gap: 20px;
+    align-items: center;
 
+  }
+  .image_business {
+    width: 180px;
+  }
   #s2 {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -190,10 +189,12 @@
   #spotlight p {
     text-align: left !important;
   }
-  #spotlight i {
-    color: #127ff5;
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 15px;
+  .lastUpdated {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .footer_bars {
+    display: inline-block;
   }
 }
