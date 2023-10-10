@@ -11,14 +11,28 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
-  background-color: #f8edef;
+  background-color: #EEF5F9;
 }
 #notification {
   background-color: white;
   text-align: center;
   color: var(--blue);
 }
-
+#s1,
+#s2,
+#s3 {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+}
+.image_business {
+  width: 180px;
+}
 #content main {
   display: grid;
   grid-template-columns: 1fr;
@@ -35,12 +49,13 @@ body {
     grid-row: 1/2;
     grid-column: 1/4;
     position: relative;
+    background-color: #525254;
 }
 .heroImg {
   height: 100%;
 }
 .triangle {
-
+  
   height: 100%;
   width: 100%;
   position: absolute;
@@ -50,19 +65,25 @@ body {
   justify-content: center;
   padding: 40px;
 }
-.triangle h2 {
+.triangle h1 {
   width: fit-content;
+  color: #43ADE9;
+  font-size: 60px;
+
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* -webkit-text-stroke: 6px rgb(255, 255, 255); */
+  /* text-shadow: -10px 0 rgb(19, 0, 185), 0 1px black, 1px 0 black, 0 -1px black; */
 }
 .triangle button {
   width: fit-content;
   padding: 10px 30px;
   border: none;
   border-radius: 2px;
-  background-color: #143356;
+  background-color: var(--blue);
   display: block;
-  border: 1px solid black;
   color: white;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .triangle h2, .triangle p {
@@ -157,6 +178,7 @@ nav ul.active {
   filter: brightness(100);
   grid-column: 3/4;
   padding-right: 10px;
+  cursor: pointer;
 }
 .fa-bars,
 .fa-xmark {
@@ -211,6 +233,7 @@ nav ul.active {
 #hero {
   grid-column: 1/2;
   grid-row: 1/2;
+  min-height: 500px;
 }
 #event {
   grid-column: 1/2;
@@ -230,17 +253,7 @@ nav ul.active {
   align-items: center;
   gap: 10px;
 }
-#s1,
-#s2,
-#s3 {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  align-items: flex-start;
-  background-color: white;
-}
+
 #Weather, #hero, #event, #s1, #s2, #s3{
   /* border: 1px solid rgb(229 229 229); */
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
@@ -256,7 +269,7 @@ nav ul.active {
 .temp {
   color: white;
 
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .desc {
@@ -267,14 +280,14 @@ nav ul.active {
 .weatherDesc {
   display: flex;
   flex-direction: row;
-  height: 60px;
+  margin-top: 20px;
   gap: 10px;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
 }
 .weatherDesc p {
   padding-bottom: 10px;
+  font-size: 20px;
 }
 .weatherIcons {
   display: flex;
@@ -317,7 +330,7 @@ footer {
   justify-content: center;
   gap: 40px;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
 }
 .footerContainer * {
   text-align: left;
@@ -328,6 +341,7 @@ footer {
 }
 #logo_footer {
   filter: brightness(0);
+  opacity: 0.7;
 }
 .lastUpdated {
   background-color: var(--blue);

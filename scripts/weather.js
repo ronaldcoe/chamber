@@ -28,7 +28,7 @@ function displayCurrentTemp(data) {
 
   document.querySelector(".desc").innerHTML = data.days[0].hours[getTime() - 1].conditions;
 
-  document.querySelector(".temp").innerHTML = c + " <span>°F;</span>";
+  document.querySelector(".temp").innerHTML = c + " <span>°F</span>";
   let wind = document.querySelector(".windvalue").innerHTML = data.days[0].hours[getTime() - 1].windspeed;
 
 
