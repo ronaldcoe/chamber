@@ -320,6 +320,7 @@ footer {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+
   justify-content: space-between;
 }
 .footerContainer {
@@ -328,7 +329,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   align-items: center;
   padding: 60px;
 }
