@@ -47,7 +47,7 @@ function displayCurrentTemp(data) {
     windChillSpan.innerHTML = windchill;
 }
 
-newSearch();
+// newSearch();
 
 
 
