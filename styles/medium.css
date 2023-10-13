@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1140px) {
   
   .wrap {
     max-width: 1400px;
@@ -127,7 +127,6 @@
   }
 
   #event p {
-    color: #525254;
     padding-bottom: 10px;
   }
 

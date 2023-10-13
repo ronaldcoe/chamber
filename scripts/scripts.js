@@ -19,3 +19,38 @@ function toggleMenu() {
 }
 
 document.querySelector('.hamburger').addEventListener('click', toggleMenu)
+
+
+
+
+// DARK MODE 
+let darkMode = document.querySelector("#dark_mode")
+function toggleDarkMode() {
+    if(darkMode.textContent == "Dark 🌙") {
+        document.documentElement.style.setProperty('--containers-background', "#1E1E1E");
+        document.documentElement.style.setProperty('--body-background-color', "#121212");
+        document.documentElement.style.setProperty('--blue', "#121212");
+        document.documentElement.style.setProperty('--dark-blue', "white");
+        document.documentElement.style.setProperty('--text-color', "white");
+        document.documentElement.style.setProperty('--nav-bar-color', "#1E1E1E");
+        document.documentElement.style.setProperty('--footer-color', "#1E1E1E");
+        document.documentElement.style.setProperty('--footer-color-text', "white");
+        document.documentElement.style.setProperty('--logo-footer-filter', "100");
+        darkMode.textContent = "Light ☀️"
+    } else {
+        document.documentElement.style.setProperty('--containers-background', "white");
+        document.documentElement.style.setProperty('--body-background-color', "#EEF5F9");
+        document.documentElement.style.setProperty('--blue', "#2a2760");
+        document.documentElement.style.setProperty('--dark-blue', "#2a2760");
+        document.documentElement.style.setProperty('--text-color', "#525254");
+        document.documentElement.style.setProperty('--nav-bar-color', "#2a2760");
+        document.documentElement.style.setProperty('--footer-color', "#f5f5f5");
+        document.documentElement.style.setProperty('--footer-color-text', "#1E1E1E");
+        document.documentElement.style.setProperty('--logo-footer-filter', "0");
+        darkMode.textContent = "Dark 🌙"
+    }
+   
+   
+}
+
+darkMode.addEventListener("click", toggleDarkMode)
