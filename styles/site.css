@@ -21,7 +21,7 @@ body {
   background-color: var(--body-background-color);
 }
 #dark_mode {
-  position: absolute;
+  float: right;
   top: 15px;
   right: 100px;
   background-color: white;
@@ -237,7 +237,7 @@ nav ul.active {
   display: none;
 }
 .social i {
-  color: white;
+  color: var(--footer-color-text);
   font-size: 20px;
 }
 
