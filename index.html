@@ -17,10 +17,7 @@
     <link rel="shortcut icon" href="./images/icon_gye.ico" type="image/x-icon">
     <script src="./scripts/scripts.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/79df2091f5.js"
-      crossorigin="anonymous"
-    ></script>
+   
     <title>Guayaquil Chamber Site</title>
   </head>
   <body>
@@ -70,12 +67,6 @@
 
         <section id="hero">
           <div class="triangle">
-            <!-- <h2>Come join us</h2> -->
-            <!-- <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              tincidunt urna in malesuada semper. Nam rutrum turpis sit amet
-              nisi tristique, venenatis pulvinar dolor iaculis.
-            </p> -->
             <h1>
               <span>Welcome to the</span> 
               <span>Guayaquil Chamber</span> 
@@ -83,7 +74,11 @@
             </h1>
             <button>Join the chamber today!</button>
           </div>
-          <img class="heroImg" src="./images/banner-fixed.jpg" alt="simonbolivar" />
+          <picture>
+            <source media="(max-width:650px)" srcset="./images/banner-small.jpg">
+            <source media="(max-width:800px)" srcset="./images/banner-medium.jpg">
+            <img src="./images/banner-fixed.jpg" alt="Picture of the Santay Bridge in Guayaquil Ecuador">
+          </picture>
         </section>
         <section id="Weather">
           <div class="weatherTop">
@@ -170,9 +165,21 @@
           Teléfonos: (593 4) 2594800 <br />
           Correo: info@guayaquil.gob.ec
           <div class="social">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+              <path d="M16.5 7.5l0 .01"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path>
+              <path d="M10 9l5 3l-5 3z"></path>
+            </svg>
           </div>
         </div>
       </div>

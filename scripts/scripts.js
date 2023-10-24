@@ -36,6 +36,7 @@ function toggleDarkMode() {
         document.documentElement.style.setProperty('--footer-color', "#1E1E1E");
         document.documentElement.style.setProperty('--footer-color-text', "white");
         document.documentElement.style.setProperty('--logo-footer-filter', "100");
+        document.documentElement.style.setProperty('--social-footer-filter', "100");
         darkMode.textContent = "Light ☀️"
     } else {
         document.documentElement.style.setProperty('--containers-background', "white");
